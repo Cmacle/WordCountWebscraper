@@ -42,8 +42,8 @@ def scrape_words(url):
 
 def num_words(url):
     wordList = scrape_words(url)
+    print(wordList)
     return len(wordList)
 
 url = input('Enter the url of the website:')
-print(scrape_words(url))
 print(f'Word Count: {num_words(url)}')
